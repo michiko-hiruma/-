@@ -56,18 +56,30 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
+  color: #fff; 
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  font-style: italic;
+}
+#t {
+  font-weight: bold;
+  color: white; 
+}
+#t:hover {
+  color: gray;
+  background-color: #28a745;
+  
 }
 
 #logo:hover {
-  color: #fff;
+  color: gray;
   text-decoration: none;
 }
 
+.bg-header {
+   background-color: #28a745;
+}
 /* デバッグウインドウ */
 
 .debug_dump {
@@ -95,4 +107,18 @@ p {
   .form-control {
     color: $state-danger-text;
   }
+}
+.a {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 60px;
+}
+.b {
+  font-size: 20px;
+}
+.c {
+  text-align: center; 
+  width: 150px;
+  margin-left: 200px;
+  display: block;
 }
