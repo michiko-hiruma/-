@@ -6,7 +6,8 @@ User.create!( name: "Sample User",
               password: "password",
               password_confirmation: "password")
 99.times do |n|
-    User.create!( name: "Sample User#{n+1}",
+    name = Faker::Name.name
+    User.create!( name: name,
               email: "sample#{n+1}@email.com",
               password: "password",
               password_confirmation: "password")
@@ -18,4 +19,4 @@ user = User.find(1)
                   detail: "タスク詳細#{n+1}",
                   user_id: user.id)
 end              
-     
+    
