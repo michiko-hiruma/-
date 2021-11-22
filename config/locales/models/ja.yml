@@ -1,15 +1,20 @@
 ja:
   activerecord:
     models:
-      post: 投稿
       user: ユーザー
+      task: タスク
     attributes:
-      post:
-        content: 投稿内容
-      user:
-        id: ID
-        name: 名前
-        email: メールアドレス
-        picture: ユーザー画像
-        password: パスワード
-        created_at: 作成日
+        user:
+          id: ID
+          name: 名前
+          email: メールアドレス
+          password: パスワード
+          password_confirmation: パスワード再入力
+          created_at: 作成日
+          updated_at: 更新日
+        task:
+          id: ID
+          name: 名称
+          description: 詳細
+          created_at: 作成日
+          updated_at: 更新日
