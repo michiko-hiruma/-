@@ -1,5 +1,9 @@
 class Task < ApplicationRecord
-    belongs_to :user
-    validates :name, presence: true, length: { maximum: 100 }
-    validates :detail, presence: true, length: { maximum: 200 }
+  default_scope -> { order(created_at: :desc) }
+  
+  belongs_to :user
+  
+  validates :user_id, presence: true
+  validates :name, presence: true, length: { maximum: 50 }
+  validates :description, presence: true, length: { in: 5..300 }
 end
