@@ -19,4 +19,9 @@ user = User.find(1)
                   description: "タスク詳細#{n+1}",
                   user_id: user.id)
 end              
-    
+user = User.find(2)              
+50.times do |n|              
+    Task.create!( name: "タスク#{n+1}",
+                  description: "タスク詳細#{n+1}",
+                  user_id: user.id)
+end       
